@@ -20,5 +20,5 @@ app.use(express.static(join(__dirname, "public")));
 //app.get("/", (req, res) => res.send("Hello Mundo"));
 //Ahora las rutas de las diferentes pag de la app se han movido a la carpeta routes
 
-app.listen(3000);
-console.log("Server is running on port, ", 3000);
+app.listen(process.env.PORT || 3000);
+console.log("Server is running on port, ", process.env.PORT || 3000);
